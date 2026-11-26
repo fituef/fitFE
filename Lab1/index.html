@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header"> 
+  <!-- alt: describes the image for screen reader users --> 
+  <!-- width, height: reserve space so the page does not jump --> 
+  <img src="images/logo.svg" alt="Connected Coffee logo" width="60" height="60"> 
+  <nav> 
+    <!-- href="#menu": jumps to the element with id="menu" on the same page --> 
+    <a href="index.html">Home</a> 
+    <a href="#menu">Menu</a> 
+    <a href="#contact">Contact</a> 
+  </nav> 
+
+</header>
+    <main>
+        <!-- Introduction (hero) --> 
+  <section class="hero"> 
+    <h1>Connected Coffee</h1> 
+    <p>Slow-brewed coffee for a connected community.</p> 
+    <!-- A link styled as a button by class="btn" in CSS --> 
+    <a class="btn" href="#menu">View our menu</a> 
+  </section> 
+ 
+  <!-- Step 4 goes here, still inside main -->
+   <!-- Drink list: a ul holds several li, each li is one drink --> 
+<section id="menu"> 
+  <h2>Featured drinks</h2> 
+  <ul class="drink-list"> 
+    <li class="drink"> 
+      <h3>Vietnamese Iced Coffee</h3> 
+      <p>Strong robusta with condensed milk over ice.</p> 
+      <p class="price">35,000 VND</p> 
+    </li> 
+    <li class="drink"> 
+      <h3>Coconut Coffee</h3> 
+      <p>Espresso blended with creamy coconut.</p> 
+      <p class="price">45,000 VND</p> 
+    </li> 
+    <li class="drink"> 
+      <h3>Caramel Latte</h3> 
+      <p>Silky milk, espresso and house caramel.</p> 
+      <p class="price">50,000 VND</p> 
+    </li> 
+    <!-- Step 7: add your signature drink here, same structure --> 
+  </ul> 
+</section>
+    </main>
+  <footer id="contact" class="site-footer"> 
+  <p>12 Nguyen Hue, District 1, Ho Chi Minh City · Open 7:00–22:00</p> 
+  <!-- &copy; is the © symbol --> 
+  <p>&copy; 2026 Connected Coffee</p> 
+</footer>
+</body>
+</html>

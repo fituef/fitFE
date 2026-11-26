@@ -1,0 +1,111 @@
+/* *: selects every element. border-box: width includes padding and border */ 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+body { 
+  margin: 0;                                  /* no space around the page */ 
+  font-family: Arial, Helvetica, sans-serif;  /* font, with fallback fonts */ 
+  line-height: 1.6;                           /* line height = 1.6 x font size */ 
+  color: #2d2118;                             /* text color */ 
+  background-color: #fff9f2;                  /* cream background */ 
+} 
+ 
+/* Comma: one rule for h1, h2 and h3 */ 
+h1, h2,h3,h4,h5{ 
+  color: #543310;    /* brand brown */ 
+  line-height: 1.2; 
+}
+
+
+.site-header { 
+  padding: 16px 24px;                /* 16px top-bottom, 24px left-right */ 
+  background-color: #ffffff; 
+  border-bottom: 1px solid #d0f500;  /* thin line under the header */ 
+} 
+ 
+/* img elements inside .site-header */ 
+.site-header img { 
+  vertical-align: middle;  /* align the logo with the nav text */ 
+}
+ 
+.site-header nav { 
+  display: inline-block;  /* keep nav on the same line as the logo */ 
+  margin-left: 24px; 
+} 
+ 
+.site-header nav a { 
+  margin-right: 16px; 
+  color: #543310; 
+  font-weight: bold; 
+  text-decoration: none;  /* remove the default link underline */ 
+}
+/* :hover: when the mouse is over the link */ 
+.site-header nav a:hover { 
+  color: darkblue; 
+} 
+/* Every section in main shares a max width and is centred */ 
+main section { 
+  max-width: 960px;   /* no wider than 960px on large screens */ 
+  margin: 0 auto;     /* auto on both sides: centred */ 
+  padding: 32px 24px; 
+} 
+ 
+.hero { 
+  text-align: center;  /* centre the text and the button */ 
+} 
+ 
+.hero h1 { 
+  font-size: 48px; 
+  margin-bottom: 8px; 
+} 
+ 
+/* Turn a link into a button */ 
+.btn { 
+  display: inline-block;  /* lets padding work like a box */ 
+  padding: 12px 24px; 
+  border-radius: 8px;     /* rounded corners */ 
+  background-color: #543310; 
+  color: #ffffff; 
+  font-weight: 700; 
+  text-decoration: none; 
+}
+.drink-list { 
+  padding: 0;        /* remove the default ul indent */ 
+  list-style: none;  /* remove the bullets */ 
+} 
+ 
+.drink { 
+  margin-bottom: 16px;        /* margin: space to the next card */ 
+  padding: 16px 24px;         /* padding: space inside the border */ 
+  border: 1px solid #eadbc8;  /* border: the outline */ 
+  border-radius: 12px; 
+  background-color: #ffffff; 
+} 
+ 
+.drink h3 { 
+  margin: 0 0 4px;  /* top 0, right 0, bottom 4px, left 0 */ 
+} 
+ 
+/* Every paragraph in a card: secondary text color */ 
+.drink p { 
+  margin: 0; 
+  color: #6b5a4b; 
+}
+ 
+/* The price only: bold and brown */ 
+.drink .price { 
+  margin-top: 8px; 
+  color: #543310; 
+  font-weight: bold; 
+}
+.site-footer { 
+  padding: 24px; 
+  text-align: center; 
+  background-color: #543310;  /* brown background */ 
+  color: #fff9f2;             /* cream text for enough contrast */ 
+} 
+ 
+.site-footer p { 
+  margin: 4px 0; 
+} 
